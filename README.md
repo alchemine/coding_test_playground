@@ -61,3 +61,8 @@
 
 - `rotate(mat, r1, r2, c1, c2, clockwise=True)`
   - Rotate **inside and outside** of the matrix for selected partition
+
+
+# 4. [Hashing](notes/hashing.py)
+- `example1()`
+  > 적은 데이터 개수 + 문자열 + `dict()` → **hashing**
