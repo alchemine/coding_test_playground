@@ -53,3 +53,18 @@ def rotate(mat, r1, r2, c1, c2, clockwise=True):
         r2 -= 1
         c1 += 1
         c2 -= 1
+
+
+def update_rows_cols(mat):
+    n_rows = len(mat)
+    n_cols = len(mat[0])
+
+    for i in range(n_rows):  # i'th row
+        row = mat[i]
+        for j in range(n_cols):
+            mat[i][j] = row[j]
+
+    for j in range(n_cols):  # j'th col
+        col = [mat[i][j] for i in range(n_rows)]
+        for i in range(n_rows):
+            mat[i][j] = col[i]
