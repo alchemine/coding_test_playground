@@ -14,3 +14,6 @@ def top_down(n, cache=None):  # [n] -> [n-1] -> [n-2] -> ... -> [1]
     elif cache[n] is None:
         cache[n] = top_down(n-1, cache) + top_down(n-2, cache)
     return cache[n]
+
+
+# cache[n] 대신 n이 정답인 경우도 있다.
