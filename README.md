@@ -39,7 +39,7 @@
   - Minimum Spanning Tree
   - $O(E log E)$
 
-- `backtracking(info, edges)`
+- `backtracking_example1(info, edges)`
   - Backtracking example ([2022 KAKAO BLIND RECRUITMENT - 양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343))
 
 
@@ -62,7 +62,28 @@
 - `rotate(mat, r1, r2, c1, c2, clockwise=True)`
   - Rotate **inside and outside** of the matrix for selected partition
 
+- `update_rows_cols(mat)`
+  - Update rows, cols of mat
+
 
 # 4. [Hashing](notes/hashing.py)
 - `example1()`
   > 적은 데이터 개수 + 문자열 + `dict()` → **hashing**
+
+
+# 5. [Regular Expression](notes/regular_expression.ipynb)
+- [Regular expression](https://djy-git.github.io/2021/10/27/re.html) 참고
+
+
+# 6. [Tree](notes/tree.py)
+- `Node`
+  - `id, e, l, r`을 attribute로 가지는 class
+- `preorder(node, traversal)`
+  - 전위순회
+  - Root -> **Left** -> Right
+- `inorder(node, traversal)`
+  - 중위순회
+  - Left -> **Root** -> Right
+- `postorder(node, traversal)`
+  - 후위순회
+  - Left -> **Right** -> Root
