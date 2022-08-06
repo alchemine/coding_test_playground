@@ -98,7 +98,7 @@ def kruskal(graph):  # O(ElogE)
     return dist
 
 
-def backtracking(info, edges):
+def backtracking_example1(info, edges):
     # https://school.programmers.co.kr/learn/courses/30/lessons/92343
     answer = 0
     N = len(info)
