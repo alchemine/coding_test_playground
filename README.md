@@ -72,7 +72,7 @@
 
 
 # 5. [Regular Expression](notes/regular_expression.ipynb)
-- [Regular expression](https://djy-git.github.io/2021/10/27/re.html) 참고
+- [Regular expression](https://alchemine.github.io/2021/10/27/re.html) 참고
 
 
 # 6. [Tree](notes/tree.py)
