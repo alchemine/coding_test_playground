@@ -1,11 +1,11 @@
 import sys
 sys.setrecursionlimit(10**6)
+log = lambda *msg: print(*msg) if VERBOSE else None
+# VERBOSE = True
+VERBOSE = False
 
 def solution():
-    VERBOSE = True
-    def log(*msg):
-        if VERBOSE: print(*msg)
-    # -----------------------------
+    return
 
 
-print(solution())
+solution()
