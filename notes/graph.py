@@ -1,11 +1,12 @@
 # Adjacency matrix → Adjacency list
 def mat2list(mat, start=1, verbose=False):  # O(V^2)
     rst = {}
-    for cur_v, next_v in enumerate(mat, start=start):
-        rst[cur_v] = list(filter(lambda x: x[1] > 0, enumerate(next_v, start=start)))
+    for cur_v, next_vs in enumerate(mat, start=start):
+        rst[cur_v] = [(next_v, weight) for next_v, weight in enumerate(next_vs, start=start) if weight > 0]
     if verbose:
+        print("cur_v : [(next_v, weight)]")
         for cur_v in rst:
-            print(cur_v, rst[cur_v])
+            print(cur_v, ':', rst[cur_v])
     return rst
 
 
