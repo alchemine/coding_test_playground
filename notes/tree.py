@@ -25,9 +25,9 @@ def preorder(node, traversal):
 def inorder(node, traversal):
     if node is None:
         return
-    preorder(node.l, traversal)
+    inorder(node.l, traversal)
     traversal.append(node.id)
-    preorder(node.r, traversal)
+    inorder(node.r, traversal)
 
 
 def postorder(node, traversal):
