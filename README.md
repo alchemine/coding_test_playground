@@ -87,3 +87,11 @@
 - `postorder(node, traversal)`
   - 후위순회
   - Left -> **Right** -> Root
+
+
+# 7. Hash
+- **key**를 어떻게 설정할 지가 포인트.
+- 문제에 힌트가 있는 경우가 있다.
+
+# 8. Stack
+- **Pair**가 존재하고, `push`, `pop`을 어떻게 구현할 지가 포인트.

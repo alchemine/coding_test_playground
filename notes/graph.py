@@ -48,7 +48,7 @@ def dfs(graph: dict, src: int):
             paths[next_v] = cur_path + [next_v]
             traversal.append(next_v)
             s.append([next_v, paths[next_v]])
-    return traversal, paths
+    return paths, traversal
 
 
 from collections import deque
@@ -77,7 +77,7 @@ def bfs(graph: dict, src: int):
             paths[next_v] = cur_path + [next_v]
             traversal.append(next_v)
             q.append([next_v, paths[next_v]])
-    return traversal, paths
+    return paths, traversal
 
 
 from math import inf
@@ -111,7 +111,7 @@ def dijkstra(graph: dict, src: int):
         paths[cur_v] = cur_path
         for next_v, w in graph[cur_v]:
             heappush(q, [dists[cur_v] + w, next_v, paths[cur_v] + [next_v]])
-    return dists, paths
+    return paths, dists
 
 
 from math import inf
